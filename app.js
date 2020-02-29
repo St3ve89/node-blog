@@ -20,7 +20,7 @@ app.use(express.static('public'));
 
 /* GET home page. */
 app.get('/', function(req, res) {
-  res.render('home');
+  res.render('home', { homeStartingContent });
 });
 
 app.listen(3000, function() {
